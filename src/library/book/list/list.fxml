@@ -14,14 +14,14 @@
             </font>
         </Text>
         <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" text="&lt;&lt; Back" />
-        <Button layoutX="496.0" layoutY="18.0" mnemonicParsing="false" text="New Book" />
+        <Button onAction="#createNewBook" layoutX="496.0" layoutY="18.0" mnemonicParsing="false" text="New Book" />
         <TableView fx:id="tbBooks" layoutX="20.0" layoutY="73.0" prefHeight="315.0" prefWidth="557.0">
             <columns>
                 <TableColumn fx:id="tdId" prefWidth="62.0" text="Id" />
                 <TableColumn fx:id="tdName" prefWidth="232.0" text="Name" />
                 <TableColumn fx:id="tdAuthor" prefWidth="106.0" text="Author" />
                 <TableColumn fx:id="tdQty" minWidth="0.0" prefWidth="71.0" text="Qty" />
-                <TableColumn minWidth="0.0" prefWidth="95.0" text="Action" />
+                <TableColumn fx:id="tdEdit" minWidth="0.0" prefWidth="95.0" text="Action" />
             </columns>
         </TableView>
     </children>
